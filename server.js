@@ -1,7 +1,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars')
 const bubble = require('./routes/bubble');
-const quick_sort = require('./routes/quick_sort');
+const quicksort = require('./routes/quick_sort');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(bodyParser.json({ type: 'application/*+json' }))
 app.use(express.static('public'));
 
 app.use('/bubble', bubble);
-app.use('/quick_sort', quick_sort);
+app.use('/quicksort', quicksort);
 
 app.set('view engine', '.hbs');
 
