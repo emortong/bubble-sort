@@ -28,4 +28,15 @@ describe('bubble sort', () => {
     let array = 'hello';
     expect(app.bubbleSort.bind(this, array)).to.throw('error, invalid data type on input');
   })
+
+  describe('myBubbleSort', () => {
+   it('should work as a method on arrays', () => {
+    let array = [9,7,12,3,2,20];
+    expect(array.myBubbleSort()).to.deep.equal([2,3,7,9,12,20]);
+  })
 })
+
+
+
+})
+
