@@ -9,7 +9,7 @@ module.exports = (() => {
     let left = [];
     let right = [];
 
-    for(var i = 1; i < arr.length; i++) {
+    for(let i = 1; i < arr.length; i++) {
       if(arr[i] < pivot) {
         left.push(arr[i])
       } else if( arr[i] > pivot) {
