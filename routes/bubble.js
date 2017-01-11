@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bubble = require('../app.js');
+const bubble = require('../algorithms/bubble-sort.js');
 
 router.route('/')
   .post((req,res) => {
