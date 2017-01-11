@@ -18,6 +18,7 @@ O(n^2)
 
 #### Pseudocode Implementation
 
+```
 procedure bubble-sort(arr : list of sortable elements) is
   swapped <- true;
   while(swapped)
@@ -31,6 +32,7 @@ procedure bubble-sort(arr : list of sortable elements) is
   end while loop
   return arr;
 end procedure
+```
 
 ## Quick Sort
 
@@ -47,6 +49,7 @@ O(n^2)
 
 #### Pseudocode Implementation
 
+```
 procedure quicksort(arr : list of sorttable elements) is
   pivot <- arr[0];
   if length(arr) <= 1 then
@@ -66,6 +69,7 @@ procedure quicksort(arr : list of sorttable elements) is
 
   return quicksort(left) <- concat(pivot, quicksort(right))
 end procedure
+```
 
 ## Merge Sort
 
@@ -82,6 +86,7 @@ O(n log n)
 
 #### Pseudocode Implementation
 
+```
 procedure merge(left, right, arr) is
   nL <- length(left);
   nR <- length(right);
@@ -140,7 +145,7 @@ procedure merge_sort(arr: list of sortable elements) is
   return merge(left, right, arr);
 
 end procedure
-
+```
 
 ## Insertion Sort
 
@@ -157,6 +162,7 @@ O(n^2) comparisons, swaps
 
 #### Pseudocode Implementation
 
+```
 procedure insertion_sort(arr: list of sortable elements) is
   n <- length(arr);
 
@@ -174,6 +180,7 @@ procedure insertion_sort(arr: list of sortable elements) is
 
   return arr;
 end procedure;
+````
 
 
 
@@ -192,6 +199,7 @@ O(n^2)
 
 #### Pseudocode Implementation
 
+```
 procedure selection_sort(arr: list of sortable elements) is
   n <- length(arr);
 
@@ -213,3 +221,4 @@ procedure selection_sort(arr: list of sortable elements) is
 
   retun arr;
 end procedure;
+```
