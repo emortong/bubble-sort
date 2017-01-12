@@ -12,7 +12,6 @@ module.exports = (() => {
       }
       arr[hole] = value;
     }
-
     return arr;
   }
 

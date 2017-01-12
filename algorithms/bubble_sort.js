@@ -1,7 +1,7 @@
 
 module.exports = (function() {
 
-  function bubbleSort(array) {
+  function bubble_sort(array) {
     if(array.length === 0) {
       throw new Error('error, invalid length of array')
     }
@@ -44,7 +44,7 @@ module.exports = (function() {
       }
 
   return {
-    bubbleSort,
+    bubble_sort,
     myBubbleSort: Array.prototype.myBubbleSort,
   }
 

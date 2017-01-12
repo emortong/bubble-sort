@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const bubble = require('../algorithms/bubble-sort.js');
+const selection_sort = require('../algorithms/selection_sort.js');
 
 router.route('/')
   .post((req,res) => {
     let array = req.body.array;
-    let sorted = bubble.bubbleSort(array);
+    let sorted = selection_sort.selection_sort(array);
     console.log(sorted);
     res.send(sorted)
   })

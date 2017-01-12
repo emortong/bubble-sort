@@ -16,8 +16,8 @@ module.exports = (() => {
         right.push(arr[i])
       }
     }
-
     return quick_sort(left).concat(pivot, quick_sort(right))
+
   }
 
   return {
